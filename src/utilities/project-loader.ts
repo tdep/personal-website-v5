@@ -10,13 +10,17 @@ export async function loadProjects() {
         card.className = 'project-card';
 
         card.innerHTML = `
-            <video autoplay muted loop playsinline>
-                <source src="${project.image}" type="video/webm" alt="Animated demo of ${project.title}"/>
-            </video>
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <p><strong>Tech:</strong> ${project.technologies.join(', ')}</p>
-            <a href="${project.url}" target="_blank">View Project</a>
+            <div>
+                <video autoplay muted loop playsinline>
+                    <source src="${project.image}" type="video/webm" alt="Animated demo of ${project.title}"/>
+                </video>
+            </div>
+            <div>
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <p><strong>Tech:</strong> ${project.technologies.join(', ')}</p>
+                <a href="${project.url}" target="_blank">View Project</a>
+            </div>
         `;
 
         projectsContainer.appendChild(card);

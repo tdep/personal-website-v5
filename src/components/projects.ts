@@ -3,8 +3,11 @@ export function renderProjects() {
 
     if (section) {
         section.innerHTML = `
-        <h2>Projects</h2>
-        <p>There be projects here</p>
+        <div>
+            <h2>Projects</h2>
+            <p>Thar be projects here!</p>
+        </div>
+        <div id="projects-container"></div>
         `
     }
 }
