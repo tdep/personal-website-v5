@@ -1,7 +1,8 @@
 import './style.css'
 import { setupThemeToggle } from './utilities/theme'
-import { loadProjects } from './components/project-loader';
+import { renderAbout } from './components/about';
+import { loadProjects } from './utilities/project-loader';
 
-
+renderAbout();
 setupThemeToggle();
 loadProjects();

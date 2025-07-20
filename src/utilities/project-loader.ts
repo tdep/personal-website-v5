@@ -11,7 +11,7 @@ export async function loadProjects() {
 
         card.innerHTML = `
             <video autoplay muted loop playsinline>
-                <source src="${project.image}" type="video/webm" />
+                <source src="${project.image}" type="video/webm" alt="Animated demo of ${project.title}"/>
             </video>
             <h3>${project.title}</h3>
             <p>${project.description}</p>
