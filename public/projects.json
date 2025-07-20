@@ -3,12 +3,21 @@
         "title": "Project 1",
         "description": "Pellentesque porttitor nibh non felis tempus auctor. Vivamus nec pharetra arcu. Cras id dolor a enim mollis fermentum non ac libero. Proin in ornare magna. Sed a auctor libero, nec ultrices est. Mauris dignissim leo sed leo dictum pretium nec ut libero. Mauris sit amet libero rhoncus, pellentesque enim in, egestas tortor. Donec posuere aliquet lectus feugiat porttitor.",
         "technologies": ["Python", "PostgreSQL", "SQL", "Django"],
-        "url": "https://github.com/tdep"
+        "url": "https://github.com/tdep",
+        "image": "/images/portfolio-v2.webm"
     },
     {
         "title": "Project 2",
         "description": "Ut sollicitudin lorem eu velit ullamcorper, eget finibus leo efficitur. Donec fringilla erat est, in hendrerit lorem suscipit at. Nullam a rhoncus leo, vitae laoreet nisl. Nullam eu ex nec ante tincidunt consectetur ut id mauris.",
         "technologies": ["HTML", "CSS", "TypeScript"],
-        "url": "https://github.com/tdep"
+        "url": "https://github.com/tdep",
+        "image": "/images/tadlab.webm"
+    },
+    {
+        "title": "Project 3",
+        "description": "Ut sollicitudin lorem eu velit ullamcorper, eget finibus leo efficitur.",
+        "technologies": ["Java", "SpringBoot", "Next.js"],
+        "url": "https://github.com/tdep",
+        "image": ""
     }
 ]
