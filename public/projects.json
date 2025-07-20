@@ -1,23 +1,61 @@
 [
     {
-        "title": "Project 1",
-        "description": "Pellentesque porttitor nibh non felis tempus auctor. Vivamus nec pharetra arcu. Cras id dolor a enim mollis fermentum non ac libero. Proin in ornare magna. Sed a auctor libero, nec ultrices est. Mauris dignissim leo sed leo dictum pretium nec ut libero. Mauris sit amet libero rhoncus, pellentesque enim in, egestas tortor. Donec posuere aliquet lectus feugiat porttitor.",
-        "technologies": ["Python", "PostgreSQL", "SQL", "Django"],
-        "url": "https://github.com/tdep",
-        "image": "/images/portfolio-v2.webm"
+        "title": "Portfolio Website v5",
+        "description": "After some time away from the previous iteration of my website, I wanted to work on maintainability and practicality. While the previous version used a lot of the methods and tools associated with Next.js, forr a static website these felt like overkill (though an excellent practice in learning Next.js!) so I pared down this version to use vanilla TypeScript, HTML, CSS, and Vite to deploy using GitHub Pages. This gives morre space to focus on other projects and work while creating something that is more easily maintained in the future.",
+        "technologies": ["TypeScript", "HTML", "CSS", "Vite"],
+        "links": [
+            { "label": "GitHub", "url": "https://github.com/tdep/personal-website-v5" },
+            { "label": "Demo", "url": ""}
+        ],
+        "image": "",
+        "status": {"deployment": "Deployed", "exposure": "public"}
     },
     {
-        "title": "Project 2",
-        "description": "Ut sollicitudin lorem eu velit ullamcorper, eget finibus leo efficitur. Donec fringilla erat est, in hendrerit lorem suscipit at. Nullam a rhoncus leo, vitae laoreet nisl. Nullam eu ex nec ante tincidunt consectetur ut id mauris.",
-        "technologies": ["HTML", "CSS", "TypeScript"],
-        "url": "https://github.com/tdep",
-        "image": "/images/tadlab.webm"
+        "title": "Portfolio Website v4",
+        "description": "The third deployed version of my personal website. As I learn new skills and techs, I try to build something functional to reinforce the knowledge. That's the case with this version of my personal website - I scaled back the functionality (removed the backend Java API) and leaned into Next.js more using their App Router paradigm to separate logic and components while using Tailwind more fully to create a more robust website and cleaner user experience. It was deployed using Vercel.",
+        "technologies": ["Next.js", "TypeScript", "Tailwind", "Vercel"],
+        "links": [
+            { "label": "Github", "url": "https://github.com/tdep/trevordepew.com" }
+        ],
+        "video": "",
+        "status": {"deployment": "Archived", "exposure": "public"}
     },
     {
-        "title": "Project 3",
-        "description": "Ut sollicitudin lorem eu velit ullamcorper, eget finibus leo efficitur.",
-        "technologies": ["Java", "SpringBoot", "Next.js"],
-        "url": "https://github.com/tdep",
-        "image": ""
+        "title": "SongShare Backend API",
+        "description": "A friend from Flatiron School approached me about building a backend API for his project SongShare.io. We worked together with anotherr developer to scaffold a full-stack mobile application. The consesus was to build the backend using Python for ease of development and use and ultimately I settled on usinfg Django for it's robust admin functionality. The API helped create a foundation to scale the project and automate much of the logic centered around user interactions while supplying the frontend with data from a PostgreSQL database.",
+        "technologies": ["Python", "Django", "PostgreSQL"],
+        "image": "",
+        "status": {"deployment": "Archived", "exposure": "private"}
+    },
+    {
+        "title": "Portfolio Website v3",
+        "description": "The second deployed version of my personal website. This time I rebuilt it using Next.js following the Backend For Frontend (BFF) paradigm supported by Next. I also constructed a full backend API using Java and Springboot to serve data from a PostgreSQL database to the backend API built with TypeScript. This was the first project I used Tailwind to help with the CSS. It was deployed using Heroku.",
+        "technologies": ["Next.js", "TypeScript", "Java", "Springboot", "JPA", "PostgreSQL", "Heroku"],
+        "links": [
+            { "label": "Client GitHub", "url": "https://github.com/tdep/tdep-tadlab-client" }, 
+            { "label": "API GitHub", "url": "https://github.com/tdep/tdep-tadlab-api" }
+        ],
+        "video": "/images/portfolio-v2.webm",
+        "status": {"deployment": "Archived", "exposure": "public"}
+    },
+    {
+        "title": "Portfolio Website v2",
+        "description": "My first deployed personal website used to showcase my work and experience. Built using React and vanilla CSS, this project continued exploring using CSS to create custom animations and user interfaces. It was deployed using Firebase.",
+        "technologies": ["React", "JavaScript", "CSS", "Firebase"],
+        "links": [
+            { "label": "GitHub", "url": "https://github.com/tdep/portfolio-site-v2" }
+        ],
+        "video": "/images/portfolio-v2.webm",
+        "status": {"deployment": "Archived", "exposure": "public"}
+    },
+    {
+        "title": "Tadlab v0.1",
+        "description": "A proof-of-concept project built using React, vanilla CSS, and Tone.js. The keyboard and keyboard and button animation is built using only JavaScript and vanilla CSS - it responds to a 'virtual' keyboard (using the computer keyboard mapped to notes of the synth). Sound is provided using Tone.js. Less critical to the project, it also featured a backend user interface with login built with Ruby on Rails.",
+        "technologies": ["React", "JavaScript", "CSS", "Ruby on Rails", "Tone.js"],
+        "links": [
+            {"label": "GitHub", "url": "https://github.com/tdep/tadlab" }
+        ],
+        "video": "/images/tadlab.webm",
+        "status": {"deployment": "Archived", "exposure": "public"}
     }
 ]

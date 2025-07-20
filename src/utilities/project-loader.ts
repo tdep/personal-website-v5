@@ -9,17 +9,55 @@ export async function loadProjects() {
         const card = document.createElement('div');
         card.className = 'project-card';
 
+        const title = `<h3>${project.title}</h3>`;
+        const description = `<p>${project.description}</p>`;
+        
+        const technologies = Array.isArray(project.technologies) ? project.technologies
+        .map(
+            (tech: any) =>
+                `<p>${tech}`
+        ).join(", ") : "";
+
+        let mediaHTML = "";
+
+        if (project.video) {
+            mediaHTML = `
+                <video autoplay muted loop playsinline>
+                    <source src="${project.video}" type=video/webm>
+                    Your browser does not support the video tag.
+                </video>
+            `;
+        } else if (project.image) {
+            mediaHTML = `<img src="${project.image}" alt="${project.title}" loading="lazy" />`;
+        }
+
+        const links = Array.isArray(project.links)
+            ? project.links 
+            .map(
+                (link: any) => 
+                    `<a href="${link.url}" target="_blank" rel="noopener noreferrer">${link.label}</a>`
+            )
+            .join(" ") : "";
+
+        const status = project.status;
+
         card.innerHTML = `
             <div>
-                <video autoplay muted loop playsinline>
-                    <source src="${project.image}" type="video/webm" alt="Animated demo of ${project.title}"/>
-                </video>
+                ${mediaHTML}
             </div>
             <div>
-                <h3>${project.title}</h3>
-                <p>${project.description}</p>
-                <p><strong>Tech:</strong> ${project.technologies.join(', ')}</p>
-                <a href="${project.url}" target="_blank">View Project</a>
+                ${title}
+                ${description}
+            </div>
+                ${technologies}
+            <div>
+            </div>
+            <div class="project-links">
+                ${links}
+            </div>    
+            <div>
+                ${status.deployment}
+                ${status.exposure}
             </div>
         `;
 

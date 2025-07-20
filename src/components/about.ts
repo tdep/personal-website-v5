@@ -8,6 +8,7 @@ export function renderAbout() {
             <h2>Software Engineer</h2>
         </div>
         <div>
+            <img src="/images/profile.webp" alt="Trrevor DePew" />
             <p>I am a <strong>software engineer</strong> specializing in backend development. I am constantly seeking to understand how the natural and synthetic worlds work and always eager to take on another challenge. </p>
             <p>I hold a Master's degree in Music Composition and a cerrtificate in Software Engineering from Flatiron School.</p>
         </div>
